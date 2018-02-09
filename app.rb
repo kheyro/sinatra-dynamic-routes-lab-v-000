@@ -24,14 +24,16 @@ class App < Sinatra::Base
     n1, n2 = params[:number1].to_i, params[:number2].to_i
 
     case params[:operation]
-    when "adds"
+    when "add"
       total = n1 + n2
-    when "substracts"
+    when "substract"
       total = n2 - n1
-    when "multiplies"
+    when "multiplie"
       total = n1 * n2
-    when "divides"
+    when "divide"
       total = n1 / n2
+    else
+      "Not a valid operation"
     end
 
     total.to_s
