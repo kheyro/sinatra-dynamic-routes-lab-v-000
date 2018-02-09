@@ -22,7 +22,7 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
 
     n1, n2 = params[:number1].to_i, params[:number2].to_i
-   
+
     case params[:operation]
     when "adds"
       @total = n1 + n2
@@ -33,6 +33,8 @@ class App < Sinatra::Base
     when "divides"
       @total = n1 / n2
     end
+
+    erb :index
   end
 
 end
