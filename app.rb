@@ -27,8 +27,8 @@ class App < Sinatra::Base
     when "add"
       total = n1 + n2
     when "substract"
-      total = n2 - n1
-    when "multiplie"
+      total = n1 - n2
+    when "multiply"
       total = n1 * n2
     when "divide"
       total = n1 / n2
