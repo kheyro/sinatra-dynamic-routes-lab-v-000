@@ -34,7 +34,7 @@ class App < Sinatra::Base
       @total = n1 / n2
     end
 
-    erb :index
+    "#{@total}"
   end
 
 end
