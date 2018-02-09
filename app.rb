@@ -9,7 +9,7 @@ class App < Sinatra::Base
   end
 
   get '/square/:number' do
-    @square = params[:number].to_i
+    @square = params[:number].to_i * params[:number].to_i
     erb :square
   end
 
@@ -19,6 +19,8 @@ class App < Sinatra::Base
     erb :say
   end
 
-  
-    
+  get '/:operation/:number1/:number2' do
+
+    if params[:operation]
+
 end
