@@ -26,7 +26,7 @@ class App < Sinatra::Base
     case params[:operation]
     when "add"
       total = n1 + n2
-    when "substract"
+    when "subtract"
       total = n1 - n2
     when "multiply"
       total = n1 * n2
