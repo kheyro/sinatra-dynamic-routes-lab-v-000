@@ -18,7 +18,7 @@ class App < Sinatra::Base
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     erb :say
   end
-  
+
   get '/:operation/:number1/:number2' do
 
     n1, n2 = params[:number1].to_i, params[:number2].to_i
